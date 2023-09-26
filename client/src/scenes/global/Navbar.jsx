@@ -8,7 +8,7 @@ import {
 } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import { shades } from "../../theme";
-import { setIsCartOpen, toggleCart } from "../../state";
+import { toggleCart } from "../../state";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -70,7 +70,7 @@ const Navbar = () => {
           >
             <IconButton
               onClick={() => dispatch(toggleCart({}))}
-              sx={{ color: "red" }}
+              sx={{ color: "black" }}
             >
               <ShoppingBagOutlined />
             </IconButton>
